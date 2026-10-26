@@ -20,6 +20,7 @@ button,input{font:inherit}button{cursor:pointer;border:0}button:focus-visible,in
 main{max-width:620px;margin:auto;padding:16px}.screen{display:none}.screen.active{display:block}.section-title{font-size:18px;margin:8px 0 12px}.pet-card{position:relative;overflow:hidden;border-radius:25px;background:linear-gradient(150deg,#fff,#f8eaff);padding:20px;margin-bottom:16px;border:1px solid #eee3ff}.pet-card:before,.pet-card:after{content:"";position:absolute;border-radius:50%;background:#f4e8ff;z-index:0}.pet-card:before{width:130px;height:130px;right:-35px;top:-35px}.pet-card:after{width:70px;height:70px;left:-24px;bottom:-28px}.pet-content{position:relative;z-index:1;text-align:center}.pet-name{font-weight:800;font-size:19px}.pet-emoji{font-size:88px;line-height:1.35;filter:drop-shadow(0 7px 3px #55407d17);margin:5px 0}.pet-art{width:min(62vw,245px);height:245px;object-fit:contain;object-position:center;border-radius:24px;margin:8px auto;display:block;box-shadow:0 9px 22px #55407d22;animation:floaty 3s ease-in-out infinite;will-change:transform}.pet-art.joy{animation:joy 650ms ease-in-out 2}.pet-art.gentle{animation:gentle 850ms ease-in-out 1}.pet-art.snack{animation:snack 700ms ease-in-out 2}.pet-art.levelup{animation:levelup 900ms ease-in-out 2}.pet-art.playing{animation:playing 700ms ease-in-out 2}.pet-choice .animal-img{width:100%;aspect-ratio:1;object-fit:contain;object-position:center;border-radius:10px;animation:floaty 3s ease-in-out infinite}.pet-choice small{line-height:1.35}.pet-personality{font-size:12px;color:#7565a0;margin:2px 0 10px}@keyframes floaty{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-6px) rotate(1deg)}}@keyframes joy{0%,100%{transform:translateY(0) scale(1)}35%{transform:translateY(-17px) scale(1.06) rotate(-4deg)}70%{transform:translateY(-5px) scale(1.03) rotate(4deg)}}@keyframes gentle{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px) rotate(-2deg)}75%{transform:translateX(5px) rotate(2deg)}}@keyframes snack{0%,100%{transform:scale(1)}40%{transform:scale(1.09) rotate(4deg)}70%{transform:scale(.98) rotate(-3deg)}}@keyframes levelup{0%,100%{transform:translateY(0) scale(1);filter:drop-shadow(0 0 0 #ffe66d)}45%{transform:translateY(-20px) scale(1.12);filter:drop-shadow(0 0 18px #ffe66d)}}@keyframes playing{0%,100%{transform:rotate(0) translateY(0)}25%{transform:rotate(-7deg) translateY(-8px)}75%{transform:rotate(7deg) translateY(-8px)}}.speech{display:inline-block;background:white;border:1px solid #eee4ff;border-radius:16px;padding:9px 13px;font-size:13px;color:#625b82;max-width:100%}.levelrow{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin:14px 0 6px}.bar{height:9px;background:#e9e3fa;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#ff91b8,#9276eb);border-radius:20px;transition:width .3s}.meters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;text-align:left}.meterlabel{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:5px}.meter .bar{height:7px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0 20px}.btn{padding:13px 14px;border-radius:15px;background:var(--purple);color:white;font-weight:750;box-shadow:0 4px 0 #5948b7;transition:transform .1s}.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #5948b7}.btn.pink{background:#f47ca5;box-shadow:0 4px 0 #cc5e87}.btn.light{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:0 3px 0 #e6def6}.btn:disabled{opacity:.45;cursor:not-allowed}.wide{width:100%}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile{border-radius:18px;padding:15px;color:white;min-height:120px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 4px #00000012}.tile .big{font-size:28px}.tile b{font-size:16px}.tile small{opacity:.9}.geo{background:linear-gradient(135deg,#41b889,#19835f)}.hist{background:linear-gradient(135deg,#ff9c82,#db5f67)}.civ{background:linear-gradient(135deg,#9d86ed,#6856c4)}.mix{background:linear-gradient(135deg,#63a9ef,#3477cb)}
 .pet-picker{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 18px}.pet-choice{background:#fff;border:1.5px solid var(--line);border-radius:15px;padding:10px 5px;color:var(--ink);display:grid;gap:4px;justify-items:center}.pet-choice .animal{font-size:29px}.pet-choice small{font-size:11px}.pet-choice.selected{border-color:var(--purple);background:#f0edff;box-shadow:0 0 0 2px #7868dc20}.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:14px}.eyebrow{font-size:11px;letter-spacing:.08em;color:var(--purple);font-weight:800}.question{font-size:19px;line-height:1.65;margin:12px 0 17px}.options{display:grid;gap:9px}.option{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:13px;text-align:left;color:var(--ink);line-height:1.5}.option.selected{border-color:var(--purple);background:#f0edff}.option.correct{border-color:#54b889;background:#e9faf2}.option.wrong{border-color:#f18ba5;background:#fff0f4}.letter{display:inline-grid;place-items:center;background:#f0edff;color:#6958c5;width:28px;height:28px;border-radius:9px;font-weight:800;margin-right:8px;font-size:12px}.feedback{padding:14px;border-radius:15px;margin-top:13px;line-height:1.7;font-size:14px}.good{background:#e8f9f0;color:#176642}.bad{background:#fff2e1;color:#835018}.pill{display:inline-block;background:#f0edff;color:#6c5ac7;padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800}.progress{display:flex;gap:5px;margin:12px 0}.progress i{height:5px;border-radius:9px;flex:1;background:#e9e3fa}.progress i.on{background:#8b78e5}.tabs{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:10}.tab{background:none;color:#8b86a3;padding:6px 0;font-size:10px;display:grid;gap:3px;justify-items:center}.tab .ico{font-size:21px}.tab.active{color:#7565d8;font-weight:800}.empty{text-align:center;padding:25px 12px;color:var(--muted);line-height:1.8}.list-item{padding:12px 0;border-bottom:1px solid #f0edf7}.list-item:last-child{border-bottom:0}.list-item b{display:block;margin-bottom:6px}.muted{font-size:12px;color:var(--muted);line-height:1.6}.name-input{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--ink);background:white}.result-emoji{font-size:62px;text-align:center;margin:8px}
 @media(min-width:560px){main{padding:22px}.pet-emoji{font-size:100px}}
+ .answer-input{font-family:inherit;background:#fff;color:#332b55;box-sizing:border-box}.answer-input:focus{outline:3px solid #cfc4ff;border-color:#7967dc}
 </style>
 </head>
 <body>
@@ -96,7 +97,122 @@ const QUESTIONS=[
 {cat:"公民",unit:"選挙制度",q:"日本の衆議院議員の任期は原則何年？",o:["2年","4年","6年","8年"],a:1,e:"衆議院議員の任期は4年ですが、解散があればその前に終了します。"},
 {cat:"公民",unit:"三権分立",q:"法律や命令などが憲法に違反していないかを判断する権限を何という？",o:["行政権","立法権","違憲審査権","条約締結権"],a:2,e:"違憲審査権は、法律などが憲法に適合するかを審査する権限です。最高裁判所は終審裁判所としてこの権限を持ちます。"},
 {cat:"公民",unit:"地方自治",q:"地方公共団体の長や議会の議員を住民が直接選ぶ仕組みは？",o:["間接民主制だけの仕組み","直接請求制度","住民投票だけの仕組み","直接選挙"],a:3,e:"知事や市町村長、地方議会の議員は住民の直接選挙によって選ばれます。"}
+,
+{"cat":"地理","unit":"世界の地域","q":"世界で面積が最も大きい国は？","o":["カナダ","ロシア","中国","アメリカ合衆国"],"a":1,"e":"ロシアはヨーロッパ東部からアジア北部に広がる、世界最大の面積をもつ国です。"},
+{"cat":"地理","unit":"世界の地域","q":"赤道が通る大陸はどれ？","o":["ヨーロッパ","南極","アフリカ","北アメリカ"],"a":2,"e":"赤道はアフリカや南アメリカ、アジアの島々などを通ります。"},
+{"cat":"地理","unit":"世界の地域","q":"世界で人口が最も多い国として現在知られる国は？","o":["インド","日本","ドイツ","カナダ"],"a":0,"e":"インドは2023年に中国を上回り、人口が最も多い国となったと推計されています。"},
+{"cat":"地理","unit":"世界の地域","q":"アンデス山脈がある大陸は？","o":["アフリカ","南アメリカ","ヨーロッパ","オーストラリア"],"a":1,"e":"アンデス山脈は南アメリカ大陸の西側に南北に連なっています。"},
+{"cat":"地理","unit":"世界の気候","q":"地中海性気候の特徴は？","o":["夏に乾燥し冬に雨が多い","一年中氷点下","一年中雨が降らない","夏に雨が多く冬は乾燥する"],"a":0,"e":"地中海性気候は、夏に乾燥し、冬に比較的雨が多いのが特徴です。"},
+{"cat":"地理","unit":"世界の気候","q":"砂漠気候で特に少ないものは？","o":["日照時間","降水量","気温の日較差","砂の量"],"a":1,"e":"砂漠気候は降水量が非常に少なく、乾燥しています。"},
+{"cat":"地理","unit":"世界の地域","q":"ASEANは主にどの地域の国々の組織？","o":["東南アジア","西ヨーロッパ","南アメリカ","北アフリカ"],"a":0,"e":"ASEANは東南アジア諸国連合です。"},
+{"cat":"地理","unit":"世界の地域","q":"EUの共通通貨として使われるものは？","o":["ポンド","ドル","ユーロ","元"],"a":2,"e":"ユーロはEU加盟国の一部で使われている共通通貨です。"},
+{"cat":"地理","unit":"日本の地形","q":"日本で最も長い川は？","o":["利根川","信濃川","石狩川","木曽川"],"a":1,"e":"信濃川は長野県では千曲川と呼ばれ、日本で最も長い川です。"},
+{"cat":"地理","unit":"日本の地形","q":"日本で最も面積が大きい湖は？","o":["琵琶湖","霞ヶ浦","サロマ湖","猪苗代湖"],"a":0,"e":"滋賀県にある琵琶湖は、日本最大の面積をもつ湖です。"},
+{"cat":"地理","unit":"日本の地形","q":"日本アルプスがある地方は？","o":["北海道","東北地方","中部地方","九州地方"],"a":2,"e":"飛騨・木曽・赤石山脈を日本アルプスと呼び、中部地方に位置します。"},
+{"cat":"地理","unit":"日本の気候","q":"梅雨の時期に日本付近にできる前線は？","o":["寒冷前線だけ","停滞前線","閉塞前線だけ","前線はできない"],"a":1,"e":"梅雨の時期には、暖気と寒気がぶつかる梅雨前線（停滞前線）が日本付近にのびます。"},
+{"cat":"地理","unit":"日本の気候","q":"台風が発達しやすい海面の条件は？","o":["海面水温が高い","海面が凍っている","海水が淡水である","海面水温が低い"],"a":0,"e":"台風は暖かい海から供給される水蒸気と熱エネルギーによって発達します。"},
+{"cat":"地理","unit":"日本の農業","q":"北海道で大規模な畑作や酪農が発達した理由の一つは？","o":["土地が広く大規模経営がしやすい","一年中稲作しかできない","人口密度が全国一高い","平地がまったくない"],"a":0,"e":"北海道は広い土地を利用した大規模な畑作や酪農が盛んです。"},
+{"cat":"地理","unit":"日本の農業","q":"高知県などで冬に野菜を出荷するために行われることがある栽培は？","o":["促成栽培","焼畑農業","輪作のみ","抑制栽培だけ"],"a":0,"e":"温暖な気候やビニールハウスを利用して出荷時期を早める促成栽培が行われます。"},
+{"cat":"地理","unit":"日本の工業","q":"自動車工業が盛んな愛知県を中心とする工業地域は？","o":["京浜工業地帯","中京工業地帯","阪神工業地帯","北九州工業地域"],"a":1,"e":"愛知県を中心に自動車工業が発達した地域は中京工業地帯です。"},
+{"cat":"地理","unit":"日本の工業","q":"工場が高速道路や港の近くに立地する利点は？","o":["輸送が便利になる","必ず雨が増える","人口がゼロになる","原料が不要になる"],"a":0,"e":"原料や製品を運びやすくなるため、交通網や港は工場立地に重要です。"},
+{"cat":"地理","unit":"人口","q":"人口ピラミッドで高齢者の割合が大きい形は？","o":["富士山型","つりがね型","つぼ型","三角形だけ"],"a":2,"e":"つぼ型は年少人口が少なく、高齢者の割合が大きい人口構成を表します。"},
+{"cat":"地理","unit":"地図","q":"地形図で等高線の間隔がせまい場所は？","o":["傾斜が急","傾斜がゆるやか","必ず平地","海の中だけ"],"a":0,"e":"等高線の間隔がせまいほど、短い水平距離で標高が変わるため傾斜が急です。"},
+{"cat":"地理","unit":"地図","q":"縮尺1:25,000の地図で地図上4cmの実際の距離は？","o":["100m","250m","1km","10km"],"a":2,"e":"4cm×25,000＝100,000cmで、実際の距離は1kmです。"},
+{"cat":"歴史","unit":"旧石器時代","q":"旧石器時代の人々が主に使った石器は？","o":["打製石器","磨製石器","青銅器","鉄器"],"a":0,"e":"石を打ち欠いて作る打製石器が使われました。"},
+{"cat":"歴史","unit":"縄文時代","q":"縄文時代の代表的な土器は？","o":["弥生土器","縄文土器","須恵器","備前焼"],"a":1,"e":"縄目の文様などが特徴の縄文土器が使われました。"},
+{"cat":"歴史","unit":"弥生時代","q":"弥生時代に広まった農業は？","o":["稲作","小麦だけの遊牧","ジャガイモ栽培","大規模な茶園"],"a":0,"e":"弥生時代には大陸から伝わった稲作が広まりました。"},
+{"cat":"歴史","unit":"古墳時代","q":"大王の墓などに造られた大きな墓を何という？","o":["貝塚","古墳","城下町","条里"],"a":1,"e":"古墳時代には有力者の墓として大きな古墳が造られました。"},
+{"cat":"歴史","unit":"飛鳥時代","q":"聖徳太子が役人の心構えを示したとされるものは？","o":["十七条の憲法","武家諸法度","御成敗式目","大日本帝国憲法"],"a":0,"e":"十七条の憲法は役人の心得を示したものとされています。"},
+{"cat":"歴史","unit":"奈良時代","q":"奈良時代に都が置かれた場所は？","o":["平安京","平城京","藤原京だけ","江戸"],"a":1,"e":"奈良時代の都は平城京です。"},
+{"cat":"歴史","unit":"奈良時代","q":"奈良時代に国ごとに建てられた寺は？","o":["国分寺","金閣","銀閣","東照宮"],"a":0,"e":"聖武天皇は仏教の力で国を守ろうとして国分寺・国分尼寺の建立を進めました。"},
+{"cat":"歴史","unit":"平安時代","q":"摂関政治で力をもった一族は？","o":["平氏","源氏","藤原氏","足利氏"],"a":2,"e":"藤原氏は摂政・関白の地位を通じて政治の実権を握りました。"},
+{"cat":"歴史","unit":"平安時代","q":"『源氏物語』を書いた人物は？","o":["清少納言","紫式部","和泉式部","小野小町"],"a":1,"e":"紫式部が『源氏物語』を書きました。"},
+{"cat":"歴史","unit":"鎌倉時代","q":"鎌倉幕府を開いた人物は？","o":["源頼朝","源義経","北条時宗","足利尊氏"],"a":0,"e":"源頼朝は鎌倉を本拠地として武家政権を築きました。"},
+{"cat":"歴史","unit":"鎌倉時代","q":"元が日本に攻めてきた出来事を何という？","o":["応仁の乱","元寇","壬申の乱","島原の乱"],"a":1,"e":"1274年と1281年に元軍などが日本に襲来した出来事を元寇といいます。"},
+{"cat":"歴史","unit":"室町時代","q":"室町幕府を開いた人物は？","o":["徳川家康","織田信長","足利尊氏","豊臣秀吉"],"a":2,"e":"足利尊氏が室町幕府を開きました。"},
+{"cat":"歴史","unit":"室町時代","q":"京都で起こり、戦国時代のきっかけの一つとなった戦乱は？","o":["承久の乱","応仁の乱","西南戦争","戊辰戦争"],"a":1,"e":"1467年に始まった応仁の乱の後、各地で戦国大名が台頭しました。"},
+{"cat":"歴史","unit":"安土桃山時代","q":"全国統一を進め、太閤検地や刀狩を行った人物は？","o":["豊臣秀吉","徳川吉宗","伊藤博文","北条時宗"],"a":0,"e":"豊臣秀吉は太閤検地や刀狩を進め、支配体制を整えました。"},
+{"cat":"歴史","unit":"安土桃山時代","q":"織田信長が商工業を活発にするために進めた政策は？","o":["楽市・楽座","参勤交代","鎖国","地租改正"],"a":0,"e":"楽市・楽座は座などの特権を制限し、商工業を活発にする政策でした。"},
+{"cat":"歴史","unit":"江戸時代","q":"江戸幕府を開いた人物は？","o":["徳川家康","徳川慶喜","徳川吉宗","松平定信"],"a":0,"e":"徳川家康は1603年に征夷大将軍となり、江戸幕府を開きました。"},
+{"cat":"歴史","unit":"江戸時代","q":"江戸時代にオランダや中国との貿易が行われた場所は？","o":["長崎","京都","日光","鎌倉"],"a":0,"e":"江戸時代、長崎はオランダや中国との貿易の窓口となりました。"},
+{"cat":"歴史","unit":"江戸時代","q":"享保の改革を行った将軍は？","o":["徳川家光","徳川吉宗","徳川綱吉","徳川慶喜"],"a":1,"e":"徳川吉宗は享保の改革で財政再建などを進めました。"},
+{"cat":"歴史","unit":"江戸時代","q":"1853年に浦賀に来航したアメリカの人物は？","o":["ペリー","ハリス","マッカーサー","ザビエル"],"a":0,"e":"ペリーの来航をきっかけに、幕府は開国へと向かいました。"},
+{"cat":"歴史","unit":"明治時代","q":"明治政府が藩を廃止して府県を置いた改革は？","o":["廃藩置県","版籍奉還だけ","大政奉還","文明開化"],"a":0,"e":"1871年の廃藩置県で、中央政府が地方を直接治める仕組みを整えました。"},
+{"cat":"歴史","unit":"明治時代","q":"国会開設や憲法制定を求めた運動は？","o":["自由民権運動","大正デモクラシー","護憲運動だけ","米騒動"],"a":0,"e":"自由民権運動は国会開設や憲法制定などを求めました。"},
+{"cat":"歴史","unit":"明治時代","q":"1889年に発布された憲法は？","o":["日本国憲法","大日本帝国憲法","十七条の憲法","ワイマール憲法"],"a":1,"e":"大日本帝国憲法は1889年に発布され、翌年に帝国議会が開かれました。"},
+{"cat":"歴史","unit":"大正時代","q":"第一次世界大戦後に広がった、民主主義を求める風潮は？","o":["大正デモクラシー","鎖国","国風文化","文明開化"],"a":0,"e":"大正デモクラシーのもとで政党政治や民本主義などが広がりました。"},
+{"cat":"歴史","unit":"昭和時代","q":"第二次世界大戦が終結した年は？","o":["1918年","1939年","1945年","1951年"],"a":2,"e":"日本は1945年にポツダム宣言を受諾し、第二次世界大戦が終結しました。"},
+{"cat":"歴史","unit":"戦後の日本","q":"日本国憲法が施行された年は？","o":["1945年","1947年","1951年","1964年"],"a":1,"e":"日本国憲法は1947年5月3日に施行されました。"},
+{"cat":"公民","unit":"基本的人権","q":"日本国憲法第13条で重視される考え方は？","o":["個人の尊重","身分制度","国王主権","言論の禁止"],"a":0,"e":"第13条は個人として尊重されることや幸福追求権を定めています。"},
+{"cat":"公民","unit":"基本的人権","q":"法の下の平等を定めている日本国憲法の条文は？","o":["第9条","第14条","第25条","第99条"],"a":1,"e":"第14条は法の下の平等を定めています。"},
+{"cat":"公民","unit":"基本的人権","q":"健康で文化的な最低限度の生活を営む権利は？","o":["自由権","社会権","参政権","請求権だけ"],"a":1,"e":"憲法第25条の生存権は社会権の一つです。"},
+{"cat":"公民","unit":"日本国憲法","q":"日本国憲法第9条と関係が深い原則は？","o":["平和主義","地方自治","租税法律主義","議院内閣制"],"a":0,"e":"第9条は戦争の放棄などを定め、平和主義と関係します。"},
+{"cat":"公民","unit":"国会","q":"国会を構成する二つの議院は？","o":["衆議院と参議院","上院と地方院","内閣と裁判所","県議会と市議会"],"a":0,"e":"日本の国会は衆議院と参議院からなる二院制です。"},
+{"cat":"公民","unit":"国会","q":"予算を先に審議するのは原則どちらの議院？","o":["参議院","衆議院","最高裁判所","内閣だけ"],"a":1,"e":"予算は衆議院に先に提出され、衆議院の優越が認められています。"},
+{"cat":"公民","unit":"内閣","q":"内閣総理大臣を指名する機関は？","o":["国会","最高裁判所","都道府県知事","天皇だけ"],"a":0,"e":"内閣総理大臣は国会議員の中から国会が指名します。"},
+{"cat":"公民","unit":"裁判所","q":"刑事裁判で被告人が有罪とされるまでは無罪として扱う原則は？","o":["推定無罪","三審制","議院内閣制","直接請求"],"a":0,"e":"有罪判決が確定するまでは無罪として扱うことが原則です。"},
+{"cat":"公民","unit":"裁判所","q":"裁判を原則として何回まで受けられる制度を三審制という？","o":["1回","2回","3回","無制限"],"a":2,"e":"原則として第一審・第二審・第三審の三段階で審理を受けられます。"},
+{"cat":"公民","unit":"地方自治","q":"地方公共団体の仕事や財政などの基本を定める法律は？","o":["地方自治法","刑法","商法","道路交通法だけ"],"a":0,"e":"地方自治法は地方公共団体の組織や運営などを定めています。"},
+{"cat":"公民","unit":"地方自治","q":"住民が条例の制定や改廃などを求める制度は？","o":["直接請求","内閣不信任","違憲審査","国政調査"],"a":0,"e":"一定数の署名を集めることで、条例制定・改廃などを請求できます。"},
+{"cat":"公民","unit":"選挙","q":"選挙で投票内容を他人に知られない原則は？","o":["秘密選挙","公開選挙","間接選挙","制限選挙"],"a":0,"e":"秘密選挙は、誰に投票したかを秘密にできる原則です。"},
+{"cat":"公民","unit":"経済","q":"需要が供給を上回ると、一般に価格はどうなりやすい？","o":["上がる","下がる","必ずゼロになる","変化しない"],"a":0,"e":"ほかの条件が同じなら、需要が供給を上回ると価格は上がりやすくなります。"},
+{"cat":"公民","unit":"経済","q":"商品やサービスを生産・販売する企業の主な目的は？","o":["利益を得ること","法律を制定すること","裁判を行うこと","税を決めること"],"a":0,"e":"企業は商品やサービスを提供し、利益を得ることを主な目的とします。"},
+{"cat":"公民","unit":"経済","q":"日本銀行の役割の一つは？","o":["銀行券を発行する","法律を制定する","裁判官を選ぶ","都道府県を設置する"],"a":0,"e":"日本銀行は日本の中央銀行で、銀行券の発行や金融政策などを担います。"},
+{"cat":"公民","unit":"財政","q":"国や地方公共団体が公共サービスなどのために集めるお金は？","o":["税金","配当だけ","輸出額","預金利息だけ"],"a":0,"e":"税金は公共サービスや社会保障などの財源となります。"},
+{"cat":"公民","unit":"社会保障","q":"年金・医療保険・介護保険などを含む仕組みは？","o":["社会保障制度","三権分立","市場経済だけ","直接請求制度"],"a":0,"e":"社会保障制度は、病気や高齢、失業などの生活上のリスクを支える仕組みです。"},
+{"cat":"公民","unit":"国際社会","q":"国際連合の本部がある都市は？","o":["ニューヨーク","ジュネーブだけ","東京","パリ"],"a":0,"e":"国際連合の本部はアメリカ合衆国のニューヨークにあります。"},
+{"cat":"公民","unit":"国際社会","q":"国際連合安全保障理事会の常任理事国は何か国？","o":["3か国","5か国","10か国","15か国"],"a":1,"e":"常任理事国はアメリカ・イギリス・フランス・ロシア・中国の5か国です。"},
+{"cat":"公民","unit":"環境問題","q":"地球温暖化の主な原因となる温室効果ガスの一つは？","o":["二酸化炭素","酸素","ヘリウム","ネオン"],"a":0,"e":"化石燃料の燃焼などで増える二酸化炭素は、地球温暖化の主な原因の一つです。"}];
+// 問題バンクを拡張：既存80問を保ち、入力・正誤・記述・選択の形式違いと年代並べ替えを追加
+const CORE_QUESTIONS = QUESTIONS.slice();
+const normText = v => String(v||"").replace(/[\s　。、・「」『』]/g,"").toLowerCase();
+for (const [idx, q] of CORE_QUESTIONS.entries()) {
+  const answer = q.o[q.a];
+  const grade = q.cat === "地理" ? [1,2,3][idx%3] : q.cat === "歴史" ? [1,2,3][idx%3] : 3;
+  QUESTIONS.push({...q, id:`word-${idx}`, type:"word", grade, q:`【単語入力】${q.q}`, answer, e:`正答：${answer}。${q.e}`});
+  const wrongIndex = (q.a + 1 + (idx%3)) % q.o.length;
+  const statementAnswer = idx%2===0 ? answer : q.o[wrongIndex];
+  const statementTruth = statementAnswer === answer;
+  QUESTIONS.push({cat:q.cat,unit:q.unit,grade,type:"tf",id:`tf-${idx}`,q:`【正誤】「${statementAnswer}」は、次の問いの答えとして正しい？\n${q.q}`,statement:statementAnswer,answer:statementTruth,e:`この問いの正答は「${answer}」です。${q.e}`});
+  QUESTIONS.push({...q, id:`written-${idx}`, type:"written", grade, q:`【記述】${q.q}\n理由や内容を短く説明しよう。`, answer, accept:[answer], e:`模範解答の要点：「${answer}」。${q.e}`});
+  const shuffled = q.o.map((v,i)=>({v,correct:i===q.a,sort:((i*7+idx*3)%11)})).sort((a,b)=>a.sort-b.sort);
+  QUESTIONS.push({...q,id:`choice-${idx}`,type:"choice",grade,q:`【確認チャレンジ】${q.q}`,o:shuffled.map(x=>x.v),a:shuffled.findIndex(x=>x.correct),e:q.e});
+}
+// 年代並べ替え：中学歴史で扱う代表的な出来事。選択肢から正しい年代順を選ぶ形式。
+const TIMELINES = [
+["弥生時代に稲作が広まる","邪馬台国の卑弥呼","聖徳太子が政治を行う","大化の改新"],
+["大宝律令の制定","平城京に都を移す","平安京に都を移す","平清盛が太政大臣になる"],
+["鎌倉幕府が成立する","承久の乱","御成敗式目が制定される","元寇が起こる"],
+["室町幕府が成立する","応仁の乱が始まる","鉄砲が伝来する","関ヶ原の戦い"],
+["江戸幕府が成立する","参勤交代が制度化される","享保の改革","大政奉還"],
+["廃藩置県","地租改正","大日本帝国憲法の発布","日清戦争"],
+["日露戦争","韓国併合","第一次世界大戦が始まる","普通選挙法が成立する"],
+["満州事変","五・一五事件","二・二六事件","日中戦争が始まる"],
+["太平洋戦争が始まる","日本が降伏する","日本国憲法が公布される","日本が国際連合に加盟する"],
+["日米安全保障条約が改定される","沖縄が日本に返還される","日中平和友好条約が結ばれる","消費税が導入される"],
+["聖徳太子が冠位十二階を定める","大化の改新","壬申の乱","平城京遷都"],
+["墾田永年私財法","平安京遷都","院政が始まる","鎌倉幕府が成立する"],
+["源頼朝が征夷大将軍になる","承久の乱","元寇（文永の役）","鎌倉幕府が滅亡する"],
+["足利義満が南北朝を統一する","応仁の乱","織田信長が室町幕府を滅ぼす","豊臣秀吉が全国統一を進める"],
+["刀狩","関ヶ原の戦い","大坂の陣","鎖国体制が整う"],
+["享保の改革","田沼意次の政治","寛政の改革","天保の改革"],
+["ペリーが浦賀に来航する","日米修好通商条約","大政奉還","五箇条の御誓文"],
+["学制の公布","徴兵令","地租改正","自由民権運動が広がる"],
+["第一次世界大戦","米騒動","世界恐慌","満州事変"],
+["国際連盟の成立","満州事変","日本が国際連盟を脱退する","日中戦争"],
+["サンフランシスコ平和条約","日本が国際連合に加盟する","東京オリンピック開催（1964年）","沖縄返還"],
+["ベルリンの壁崩壊","冷戦終結へ向かう動き","阪神・淡路大震災","東日本大震災"]
 ];
+function permute(arr, seed){const a=arr.slice();let x=seed+17;for(let i=a.length-1;i>0;i--){x=(x*9301+49297)%233280;const j=Math.floor(x/233280*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+for(let n=0;n<100;n++){
+ const seq=TIMELINES[n%TIMELINES.length];
+ const correct=seq.join(" → ");
+ const distractors=[permute(seq,n+11).join(" → "),permute(seq,n+29).join(" → "),permute(seq,n+47).join(" → ")];
+ const opts=permute([{v:correct,c:true},{v:distractors[0],c:false},{v:distractors[1],c:false},{v:distractors[2],c:false}],n+71);
+ QUESTIONS.push({id:`order-${n}`,cat:"歴史",unit:"年代並べ替え",grade:[1,2,3][n%3],type:"order",q:`【年代並べ替え】次の出来事を古いものから新しいものへ並べた順序はどれ？`,o:opts.map(x=>x.v),a:opts.findIndex(x=>x.c),e:`正しい順序：${correct}。出来事の年代を教科書や年表で確認しよう。`});
+}
+// 旧データと追加分を合わせて500問に固定（追加内容の確認用）
+if (QUESTIONS.length !== 500) console.warn("問題数チェック", QUESTIONS.length);
 const defaults={xp:0,correct:0,attempts:0,streak:0,best:0,snacks:3,bond:35,hunger:55,name:"もちまる",petType:"chick",missed:[],daily:0};
 const pets={
 chick:{name:"ひよこ",art:"chick",personality:"元気いっぱいの応援団長",role:"元気いっぱいの応援団長",style:"明るく前向き。語尾に「ぴよ！」がつくことも。",lines:["ぴよっ！まずは一問、羽ばたこう！","やったね！最高のスタートだよ！","ちょっと休憩しよっか。またがんばろう！","キミならできるよ！応援してるぴよ！","今日の努力、ちゃんと見てるよ！","まちがいは成長のタネだよ！","一緒にコツコツ進もうね！","その調子！自信をもって！","勉強した分だけ強くなるぴよ！","小さな一歩も大きな前進！"]},
@@ -139,17 +255,30 @@ function showPage(id){document.querySelectorAll(".screen").forEach(x=>x.classLis
 function start(t){topic=t;pool=QUESTIONS.filter(q=>t==="総合"||q.cat===t).sort(()=>Math.random()-.5);pos=0;session=0;showPage("quiz");drawQ()}
 function drawQ(){
  if(pos>=pool.length){$("questionText").textContent="クエストクリア！";$("options").innerHTML="";$("feedback").innerHTML=`<div class="feedback good">🎉 ${session}問回答！今回もよく頑張ったね。</div>`;$("answerBtn").style.display="none";$("nextBtn").style.display="block";$("nextBtn").textContent="ホームに戻る";$("nextBtn").onclick=()=>showPage("home");$("qCounter").textContent="CLEAR";$("qProgress").innerHTML="";return}
- answered=false;selected=-1;const q=pool[pos];$("quizTopic").textContent=q.cat+"｜"+q.unit;$("qCounter").textContent=(pos+1)+" / "+pool.length;
- $("qProgress").innerHTML=pool.map((_,i)=>`<i class="${i<=pos?"on":""}"></i>`).join("");$("questionText").textContent=q.q;
- $("options").innerHTML=q.o.map((o,i)=>`<button class="option" data-i="${i}"><span class="letter">${"ABCD"[i]}</span>${o}</button>`).join("");
- $("options").querySelectorAll("button").forEach(b=>b.onclick=()=>{if(answered)return;selected=+b.dataset.i;$("options").querySelectorAll("button").forEach(x=>x.classList.toggle("selected",x===b));$("answerBtn").disabled=false});
+ answered=false;selected=-1;typedAnswer="";const q=pool[pos];$("quizTopic").textContent=q.cat+"｜"+q.unit+ (q.grade?`｜中${q.grade}`:"");$("qCounter").textContent=(pos+1)+" / "+pool.length;
+ $("qProgress").innerHTML=pool.slice(0,Math.min(pool.length,20)).map((_,i)=>`<i class="${i<=pos?"on":""}"></i>`).join("");$("questionText").textContent=q.q;
+ if(q.type==="word"||q.type==="written"){
+  $("options").innerHTML=`<label class="muted" for="typedAnswer">${q.type==="word"?"答えを単語で入力":"模範解答を参考に、短く説明しよう"}</label><input id="typedAnswer" class="answer-input" type="${q.type==="word"?"text":"text"}" autocomplete="off" placeholder="ここに答えを入力" style="width:100%;padding:14px;border:2px solid #ddd5fa;border-radius:14px;font-size:16px;margin-top:8px">`;
+  $("typedAnswer").addEventListener("input",e=>{typedAnswer=e.target.value;$("answerBtn").disabled=!typedAnswer.trim()});
+ }else{
+  const opts=q.type==="tf"?["○ 正しい","× 誤り"]:q.o;
+  $("options").innerHTML=opts.map((o,i)=>`<button class="option" data-i="${i}"><span class="letter">${q.type==="tf"?["○","×"][i]:"ABCD"[i]}</span>${esc(o)}</button>`).join("");
+  $("options").querySelectorAll("button").forEach(b=>b.onclick=()=>{if(answered)return;selected=+b.dataset.i;$("options").querySelectorAll("button").forEach(x=>x.classList.toggle("selected",x===b));$("answerBtn").disabled=false});
+ }
  $("feedback").innerHTML="";$("answerBtn").style.display="block";$("answerBtn").disabled=true;$("nextBtn").style.display="none";$("nextBtn").textContent="次の問題へ ➜";$("nextBtn").onclick=next;
 }
+let typedAnswer="";
 function check(){
- if(selected<0||answered)return;answered=true;session++;state.attempts++;state.daily++;const q=pool[pos],ok=selected===q.a;
+ const q=pool[pos];if(answered)return;if((q.type==="word"||q.type==="written")&&!typedAnswer.trim())return;if(q.type!=="word"&&q.type!=="written"&&selected<0)return;answered=true;session++;state.attempts++;state.daily++;
+ let ok=false,correctLabel="";
+ if(q.type==="word"||q.type==="written"){
+  const response=normText(typedAnswer);const keys=(q.accept||[q.answer]).map(normText).filter(Boolean);ok=keys.some(k=>response===k||response.includes(k));correctLabel=q.answer;
+ }else if(q.type==="tf") {ok=(selected===0)===q.answer;correctLabel=q.answer?"○ 正しい":"× 誤り";}
+ else {ok=selected===q.a;correctLabel=q.type==="tf"?(q.answer?"○ 正しい":"× 誤り"):q.o[q.a];}
  if(ok){react(state.xp+10>=250&&level()<5?"levelup":"joy");state.correct++;state.streak++;state.best=Math.max(state.best,state.streak);let bonus=state.streak>=3?5:0;state.xp+=10+bonus;state.bond=Math.min(100,state.bond+6);state.hunger=Math.max(0,state.hunger-3);state.snacks=Math.min(9,state.snacks+1);$("feedback").innerHTML=`<div class="feedback good"><b>🎉 正解！ +${10+bonus} XP</b><br>${state.streak>=3?"🔥 コンボボーナス！":"すばらしい！"}<br>${q.e}<br>🍪 おやつを1個ゲット！</div>`;sayRandom()}
- else{react("gentle");state.streak=0;state.missed.unshift({q:q.q,a:q.o[q.a],e:q.e,cat:q.cat});$("feedback").innerHTML=`<div class="feedback bad"><b>📚 おしい！正解は「${q.o[q.a]}」</b><br>${q.e}</div>`;sayRandom()}
- $("options").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q.a)b.classList.add("correct");if(i===selected&&!ok)b.classList.add("wrong")});
+ else{react("gentle");state.streak=0;state.missed.unshift({q:q.q,a:correctLabel||q.answer||q.o?.[q.a]||"模範解答を確認",e:q.e,cat:q.cat});const answerText=q.type==="word"||q.type==="written"?q.answer:q.type==="tf"?(q.answer?"○ 正しい":"× 誤り"):q.o[q.a];$("feedback").innerHTML=`<div class="feedback bad"><b>📚 おしい！正解・模範解答：「${esc(answerText)}」</b><br>${q.e}</div>`;sayRandom()}
+ $("options").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(q.type!=="tf"&&q.type!=="word"&&q.type!=="written"&&i===q.a)b.classList.add("correct");if(i===selected&&!ok)b.classList.add("wrong")});
+ if(q.type==="word"||q.type==="written"){$("typedAnswer").disabled=true}
  $("answerBtn").style.display="none";$("nextBtn").style.display="block";save();render();
 }
 function next(){pos++;drawQ()}
