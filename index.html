@@ -18,7 +18,29 @@ button,input{font:inherit}button{cursor:pointer;border:0}button:focus-visible,in
 .brand{display:flex;align-items:center;gap:12px}.logo{width:52px;height:52px;border-radius:18px;background:#fff7d8;display:grid;place-items:center;font-size:29px;box-shadow:inset 0 -4px #efdca1}.brand h1{font-size:22px;margin:0}.brand p{font-size:12px;margin:4px 0 0;color:#eeeaff}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.stat{background:#ffffff20;border:1px solid #ffffff30;border-radius:15px;padding:10px 8px;text-align:center}.stat b{display:block;font-size:20px}.stat span{font-size:11px;color:#f0edff}
 main{max-width:620px;margin:auto;padding:16px}.screen{display:none}.screen.active{display:block}.section-title{font-size:18px;margin:8px 0 12px}.pet-card{position:relative;overflow:hidden;border-radius:25px;background:linear-gradient(150deg,#fff,#f8eaff);padding:20px;margin-bottom:16px;border:1px solid #eee3ff}.pet-card:before,.pet-card:after{content:"";position:absolute;border-radius:50%;background:#f4e8ff;z-index:0}.pet-card:before{width:130px;height:130px;right:-35px;top:-35px}.pet-card:after{width:70px;height:70px;left:-24px;bottom:-28px}.pet-content{position:relative;z-index:1;text-align:center}.pet-name{font-weight:800;font-size:19px}.pet-emoji{font-size:88px;line-height:1.35;filter:drop-shadow(0 7px 3px #55407d17);margin:5px 0}.speech{display:inline-block;background:white;border:1px solid #eee4ff;border-radius:16px;padding:9px 13px;font-size:13px;color:#625b82;max-width:100%}.levelrow{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin:14px 0 6px}.bar{height:9px;background:#e9e3fa;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#ff91b8,#9276eb);border-radius:20px;transition:width .3s}.meters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;text-align:left}.meterlabel{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:5px}.meter .bar{height:7px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0 20px}.btn{padding:13px 14px;border-radius:15px;background:var(--purple);color:white;font-weight:750;box-shadow:0 4px 0 #5948b7;transition:transform .1s}.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #5948b7}.btn.pink{background:#f47ca5;box-shadow:0 4px 0 #cc5e87}.btn.light{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:0 3px 0 #e6def6}.btn:disabled{opacity:.45;cursor:not-allowed}.wide{width:100%}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile{border-radius:18px;padding:15px;color:white;min-height:120px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 4px #00000012}.tile .big{font-size:28px}.tile b{font-size:16px}.tile small{opacity:.9}.geo{background:linear-gradient(135deg,#41b889,#19835f)}.hist{background:linear-gradient(135deg,#ff9c82,#db5f67)}.civ{background:linear-gradient(135deg,#9d86ed,#6856c4)}.mix{background:linear-gradient(135deg,#63a9ef,#3477cb)}
-.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:14px}.eyebrow{font-size:11px;letter-spacing:.08em;color:var(--purple);font-weight:800}.question{font-size:19px;line-height:1.65;margin:12px 0 17px}.options{display:grid;gap:9px}.option{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:13px;text-align:left;color:var(--ink);line-height:1.5}.option.selected{border-color:var(--purple);background:#f0edff}.option.correct{border-color:#54b889;background:#e9faf2}.option.wrong{border-color:#f18ba5;background:#fff0f4}.letter{display:inline-grid;place-items:center;background:#f0edff;color:#6958c5;width:28px;height:28px;border-radius:9px;font-weight:800;margin-right:8px;font-size:12px}.feedback{padding:14px;border-radius:15px;margin-top:13px;line-height:1.7;font-size:14px}.good{background:#e8f9f0;color:#176642}.bad{background:#fff2e1;color:#835018}.pill{display:inline-block;background:#f0edff;color:#6c5ac7;padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800}.progress{display:flex;gap:5px;margin:12px 0}.progress i{height:5px;border-radius:9px;flex:1;background:#e9e3fa}.progress i.on{background:#8b78e5}.tabs{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:10}.tab{background:none;color:#8b86a3;padding:6px 0;font-size:10px;display:grid;gap:3px;justify-items:center}.tab .ico{font-size:21px}.tab.active{color:#7565d8;font-weight:800}.empty{text-align:center;padding:25px 12px;color:var(--muted);line-height:1.8}.list-item{padding:12px 0;border-bottom:1px solid #f0edf7}.list-item:last-child{border-bottom:0}.list-item b{display:block;margin-bottom:6px}.muted{font-size:12px;color:var(--muted);line-height:1.6}.name-input{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--ink);background:white}.result-emoji{font-size:62px;text-align:center;margin:8px}
+.pet-picker{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 18px}.pet-choice{background:#fff;border:1.5px solid var(--line);border-radius:15px;padding:10px 5px;color:var(--ink);display:grid;gap:4px;justify-items:center}.pet-choice .animal{font-size:29px}.pet-choice small{font-size:11px}.pet-choice.selected{border-color:var(--purple);background:#f0edff;box-shadow:0 0 0 2px #7868dc20}.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:14px}.eyebrow{font-size:11px;letter-spacing:.08em;color:var(--purple);font-weight:800}.question{font-size:19px;line-height:1.65;margin:12px 0 17px}.options{display:grid;gap:9px}.option{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:13px;text-align:left;color:var(--ink);line-height:1.5}.option.selected{border-color:var(--purple);background:#f0edff}.option.correct{border-color:#54b889;background:#e9faf2}.option.wrong{border-color:#f18ba5;background:#fff0f4}.letter{display:inline-grid;place-items:center;background:#f0edff;color:#6958c5;width:28px;height:28px;border-radius:9px;font-weight:800;margin-right:8px;font-size:12px}.feedback{padding:14px;border-radius:15px;margin-top:13px;line-height:1.7;font-size:14px}.good{background:#e8f9f0;color:#176642}.bad{background:#fff2e1;color:#835018}.pill{display:inline-block;background:#f0edff;color:#6c5ac7;padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800}.progress{display:flex;gap:5px;margin:12px 0}.progress i{height:5px;border-radius:9px;flex:1;background:#e9e3fa}.progress i.on{background:#8b78e5}.tabs{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:10}.tab{background:none;color:#8b86a3;padding:6px 0;font-size:10px;display:grid;gap:3px;justify-items:center}.tab .ico{font-size:21px}.tab.active{color:#7565d8;font-weight:800}.empty{text-align:center;padding:25px 12px;color:var(--muted);line-height:1.8}.list-item{padding:12px 0;border-bottom:1px solid #f0edf7}.list-item:last-child{border-bottom:0}.list-item b{display:block;margin-bottom:6px}.muted{font-size:12px;color:var(--muted);line-height:1.6}.name-input{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--ink);background:white}.result-emoji{font-size:62px;text-align:center;margin:8px}
+
+/* ゆるっと動くキャラクター演出 */
+@keyframes pet-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(2deg)}}
+@keyframes pet-wiggle{0%,100%{transform:rotate(0) scale(1)}20%{transform:rotate(-9deg) scale(1.08)}40%{transform:rotate(8deg) scale(1.1)}60%{transform:rotate(-5deg) scale(1.06)}80%{transform:rotate(4deg) scale(1.03)}}
+@keyframes choice-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes sparkle-pop{0%{opacity:0;transform:scale(.3) rotate(-20deg)}45%{opacity:1;transform:scale(1.2) rotate(12deg)}100%{opacity:0;transform:scale(.8) translateY(-18px)}}
+.pet-emoji{display:inline-block;animation:pet-float 2.8s ease-in-out infinite;transform-origin:50% 75%;will-change:transform}
+.pet-emoji.excited{animation:pet-wiggle .7s ease-in-out}
+.pet-content{isolation:isolate}
+.pet-card{background:radial-gradient(circle at 50% 35%,#fff 0,#fff8ff 48%,#f8eaff 100%)}
+.pet-choice{position:relative;overflow:hidden;transition:transform .18s,border-color .18s,background .18s}
+.pet-choice .animal{display:inline-block;animation:choice-bob 2.4s ease-in-out infinite;filter:drop-shadow(0 3px 1px #5b47731c)}
+.pet-choice:nth-child(2n) .animal{animation-delay:.35s}
+.pet-choice:nth-child(3n) .animal{animation-delay:.7s}
+.pet-choice.selected{transform:translateY(-2px);background:linear-gradient(145deg,#fff,#f0eaff)}
+.pet-choice.selected:after{content:"✨";position:absolute;right:7px;top:5px;animation:sparkle-pop 1.1s ease-out infinite}
+.pet-choice:active{transform:scale(.96)}
+.sparkle{position:absolute;z-index:3;pointer-events:none;font-size:22px;animation:sparkle-pop .9s ease-out forwards}
+@media(prefers-reduced-motion:reduce){.pet-emoji,.pet-choice .animal,.pet-choice.selected:after,.sparkle{animation:none!important}.pet-choice{transition:none}}
+.character-art{display:block;width:100%;height:auto;border-radius:20px;border:1px solid #eadfff;box-shadow:0 8px 24px #6c57b51c;margin:10px 0 16px;}
+.character-intro{background:linear-gradient(135deg,#fff8d9,#fbe8f7 55%,#e8f5ff);border:1px solid #eadfff;border-radius:22px;padding:15px;margin-bottom:14px;text-align:center;}
+.character-intro h2{margin:0 0 6px;font-size:20px}.character-intro p{margin:0;color:#6d638d;font-size:13px;line-height:1.7}
 @media(min-width:560px){main{padding:22px}.pet-emoji{font-size:100px}}
 </style>
 </head>
@@ -53,6 +75,13 @@ main{max-width:620px;margin:auto;padding:16px}.screen{display:none}.screen.activ
  </div>
  <div class="panel" style="margin-top:15px"><div class="eyebrow">TODAY'S MISSION</div><h3 style="margin:7px 0">📚 3問チャレンジ</h3><div class="muted" id="missionText">問題を解いて、ペットと一緒に成長しよう！</div><div class="bar" style="margin-top:10px"><i id="missionBar" style="width:0%;background:#5eb98b"></i></div></div>
 </section>
+<section id="characters" class="screen">
+ <div class="character-intro"><h2>🐾 まなびっこのなかまたち</h2><p>オリジナルイラストの9匹と、動くキャラクターを楽しもう！<br>好きな子を選ぶと、ホーム画面の相棒が変わるよ。</p></div>
+ <img class="character-art" src="character-art.png" alt="まなびっこのオリジナルキャラクター9匹の紹介イラスト" loading="lazy">
+ <h2 class="section-title">💖 いっしょに冒険する子を選ぼう</h2><p class="muted">キャラクターはふわふわ動くよ。選んだ子はキラキラでお祝い！</p>
+ <div class="pet-picker" id="petPicker"></div>
+ <div class="panel"><b>✨ キャラクターの動き</b><p class="muted">ホームではふわふわ、選択中はキラキラ、正解やおやつのときはぴょこぴょこ動くよ。</p></div>
+</section>
 <section id="quiz" class="screen">
  <div class="panel">
   <div style="display:flex;justify-content:space-between;align-items:center"><span class="pill" id="quizTopic">地理クエスト</span><span class="muted" id="qCounter">1 / 5</span></div>
@@ -74,6 +103,7 @@ main{max-width:620px;margin:auto;padding:16px}.screen{display:none}.screen.activ
 </main>
 <nav class="tabs">
  <button class="tab active" data-page="home"><span class="ico">🏠</span>ホーム</button>
+ <button class="tab" data-page="characters"><span class="ico">🐾</span>なかま</button>
  <button class="tab" data-page="quiz"><span class="ico">⚔️</span>クエスト</button>
  <button class="tab" data-page="review"><span class="ico">📖</span>復習</button>
  <button class="tab" data-page="record"><span class="ico">🏆</span>記録</button>
@@ -96,13 +126,22 @@ const QUESTIONS=[
 {cat:"公民",unit:"三権分立",q:"法律や命令などが憲法に違反していないかを判断する権限を何という？",o:["行政権","立法権","違憲審査権","条約締結権"],a:2,e:"違憲審査権は、法律などが憲法に適合するかを審査する権限です。最高裁判所は終審裁判所としてこの権限を持ちます。"},
 {cat:"公民",unit:"地方自治",q:"地方公共団体の長や議会の議員を住民が直接選ぶ仕組みは？",o:["間接民主制だけの仕組み","直接請求制度","住民投票だけの仕組み","直接選挙"],a:3,e:"知事や市町村長、地方議会の議員は住民の直接選挙によって選ばれます。"}
 ];
-const defaults={xp:0,correct:0,attempts:0,streak:0,best:0,snacks:3,bond:35,hunger:55,name:"もちまる",missed:[],daily:0};
+const defaults={xp:0,correct:0,attempts:0,streak:0,best:0,snacks:3,bond:35,hunger:55,name:"もちまる",petType:"chick",missed:[],daily:0};
+const pets={chick:{name:"ひよこ",faces:["🥚","🐣","🐥","🐤","🐦"]},cat:{name:"ねこ",faces:["🥚","🐱","🐈","😺","😸"]},dog:{name:"いぬ",faces:["🥚","🐶","🐕","🦮","🐕‍🦺"]},rabbit:{name:"うさぎ",faces:["🥚","🐰","🐇","🐰","🐇"]},fox:{name:"きつね",faces:["🥚","🦊","🦊","🦊","🦊"]},bear:{name:"くま",faces:["🥚","🐻","🐻‍❄️","🐻","🐼"]},penguin:{name:"ペンギン",faces:["🥚","🐧","🐧","🐧","🐧"]},frog:{name:"かえる",faces:["🥚","🐸","🐸","🐸","🐸"]},hamster:{name:"ハムスター",faces:["🥚","🐹","🐹","🐹","🐹"]}};
 let state;try{state={...defaults,...JSON.parse(localStorage.getItem("manabikko-save")||"{}")}}catch{state={...defaults}}
 let topic="地理",pool=[],pos=0,selected=-1,answered=false,session=0;
 const $=id=>document.getElementById(id);
 function save(){try{localStorage.setItem("manabikko-save",JSON.stringify(state))}catch{}}
 function level(){return state.xp>=250?5:state.xp>=150?4:state.xp>=75?3:state.xp>=25?2:1}
-function stage(){return [{emoji:"🥚",name:"ふしぎなたまご"},{emoji:"🐣",name:"ぴよぴよ期"},{emoji:"🐥",name:"ひよこ期"},{emoji:"🐱",name:"もふもふ期"},{emoji:"🦊",name:"伝説の賢者"}][level()-1]}
+function stage(){const names=["ふしぎなたまご","ちびっこ期","わんぱく期","なかよし期","伝説の賢者"];const pet=pets[state.petType]||pets.chick;return {emoji:pet.faces[level()-1],name:names[level()-1]}}
+function animatePet(){
+ const el=$("petEmoji");if(!el)return;
+ el.classList.remove("excited");void el.offsetWidth;el.classList.add("excited");
+ setTimeout(()=>el.classList.remove("excited"),750);
+ const card=document.querySelector(".pet-card");if(!card)return;
+ for(let i=0;i<4;i++){const sp=document.createElement("span");sp.className="sparkle";sp.textContent=["✨","💖","⭐","🌟"][i];sp.style.left=(24+i*17)+"%";sp.style.top=(30+(i%2)*12)+"%";card.appendChild(sp);setTimeout(()=>sp.remove(),950)}
+}
+function renderPetPicker(){const root=$("petPicker");if(!root)return;root.innerHTML=Object.entries(pets).map(([key,p])=>`<button class="pet-choice ${state.petType===key?"selected":""}" data-pet="${key}" aria-pressed="${state.petType===key}"><span class="animal">${p.faces[Math.max(0,level()-1)]}</span><b>${p.name}</b><small>${state.petType===key?"いっしょに冒険中":"この子にする"}</small></button>`).join("");root.querySelectorAll("[data-pet]").forEach(btn=>btn.onclick=()=>{state.petType=btn.dataset.pet;state.name=pets[state.petType].name+"ちゃん";save();render();$("petSpeech").textContent="これからよろしくね！";animatePet()})}
 function render(){
  const s=stage(),lv=level(),threshold=[0,25,75,150,250][lv-1],next=[25,75,150,250,350][lv-1];
  $("topXP").textContent=state.xp;$("topLevel").textContent="Lv."+lv;$("topCorrect").textContent=state.correct;
@@ -116,7 +155,7 @@ function render(){
  $("missionBar").style.width=Math.min(100,state.daily/3*100)+"%";
  $("recordXP").textContent=state.xp+" XP";$("accuracy").textContent=(state.attempts?Math.round(state.correct/state.attempts*100):0)+"%";
  $("bestCombo").textContent=state.best;$("answered").textContent=state.attempts+"問";$("nameInput").value=state.name;
- renderReview();
+ renderReview();renderPetPicker();
 }
 function showPage(id){document.querySelectorAll(".screen").forEach(x=>x.classList.toggle("active",x.id===id));document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.page===id));if(id==="quiz"&&!pool.length)start("総合");if(id==="review")renderReview();render()}
 function start(t){topic=t;pool=QUESTIONS.filter(q=>t==="総合"||q.cat===t).sort(()=>Math.random()-.5);pos=0;session=0;showPage("quiz");drawQ()}
@@ -133,7 +172,7 @@ function check(){
  if(ok){state.correct++;state.streak++;state.best=Math.max(state.best,state.streak);let bonus=state.streak>=3?5:0;state.xp+=10+bonus;state.bond=Math.min(100,state.bond+6);state.hunger=Math.max(0,state.hunger-3);state.snacks=Math.min(9,state.snacks+1);$("feedback").innerHTML=`<div class="feedback good"><b>🎉 正解！ +${10+bonus} XP</b><br>${state.streak>=3?"🔥 コンボボーナス！":"すばらしい！"}<br>${q.e}<br>🍪 おやつを1個ゲット！</div>`;$("petSpeech").textContent="やったね！いっしょに成長中！"}
  else{state.streak=0;state.missed.unshift({q:q.q,a:q.o[q.a],e:q.e,cat:q.cat});$("feedback").innerHTML=`<div class="feedback bad"><b>📚 おしい！正解は「${q.o[q.a]}」</b><br>${q.e}</div>`;$("petSpeech").textContent="まちがいは成長のチャンス！"}
  $("options").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q.a)b.classList.add("correct");if(i===selected&&!ok)b.classList.add("wrong")});
- $("answerBtn").style.display="none";$("nextBtn").style.display="block";save();render();
+ $("answerBtn").style.display="none";$("nextBtn").style.display="block";save();render();if(ok)animatePet();
 }
 function next(){pos++;drawQ()}
 function renderReview(){
@@ -145,8 +184,8 @@ function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",
 document.querySelectorAll("[data-start]").forEach(b=>b.onclick=()=>start(b.dataset.start));
 document.querySelectorAll("[data-page]").forEach(b=>b.onclick=()=>showPage(b.dataset.page));
 $("answerBtn").onclick=check;$("nextBtn").onclick=next;$("quitBtn").onclick=()=>showPage("home");
-$("feedBtn").onclick=()=>{if(state.snacks<=0){$("petSpeech").textContent="おやつがないよ！勉強クエストで手に入れよう。";return}if(state.hunger>=100){$("petSpeech").textContent="おなかいっぱい！少し休もう。";return}state.snacks--;state.hunger=Math.min(100,state.hunger+25);state.bond=Math.min(100,state.bond+8);$("petSpeech").textContent="おいしい！ありがとう！";save();render()};
-$("playBtn").onclick=()=>{state.bond=Math.min(100,state.bond+12);state.hunger=Math.max(0,state.hunger-8);$("petSpeech").textContent="いっしょに遊べてうれしいな！";save();render()};
+$("feedBtn").onclick=()=>{if(state.snacks<=0){$("petSpeech").textContent="おやつがないよ！勉強クエストで手に入れよう。";return}if(state.hunger>=100){$("petSpeech").textContent="おなかいっぱい！少し休もう。";return}state.snacks--;state.hunger=Math.min(100,state.hunger+25);state.bond=Math.min(100,state.bond+8);$("petSpeech").textContent="おいしい！ありがとう！";save();render();animatePet()};
+$("playBtn").onclick=()=>{state.bond=Math.min(100,state.bond+12);state.hunger=Math.max(0,state.hunger-8);$("petSpeech").textContent="いっしょに遊べてうれしいな！";save();render();animatePet()};
 $("saveName").onclick=()=>{state.name=$("nameInput").value.trim().slice(0,12)||"もちまる";save();render();$("petSpeech").textContent="よろしくね、"+state.name+"！"};
 $("resetBtn").onclick=()=>{if(confirm("学習記録とペットの成長をリセットしますか？")){state={...defaults};save();render();showPage("home")}};
 render();
