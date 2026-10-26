@@ -1,4 +1,4 @@
-const CACHE_NAME = "manabikko-v4-original-art";
+const CACHE_NAME = "manabikko-v5-daily-bonus";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./character-art.png"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(FILES)));

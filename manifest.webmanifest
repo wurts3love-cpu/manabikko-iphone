@@ -1,23 +1,13 @@
 {
   "name": "まなびっこ｜社会クエスト",
   "short_name": "まなびっこ",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f5f2ff",
   "theme_color": "#7565d8",
-  "lang": "ja",
-  "description": "高校受験の社会をかわいいペットと一緒に学ぶアプリ",
   "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png"}
   ]
 }
