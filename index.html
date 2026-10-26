@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7565d8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="まなびっこ">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>まなびっこ｜社会クエスト</title>
+<style>
+:root{--ink:#302a55;--muted:#77728e;--purple:#7868dc;--pink:#ff8eb4;--yellow:#ffd56a;--mint:#bcefdc;--paper:#fff;--bg:#f5f2ff;--line:#e7e1f7;--green:#23845b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;padding-bottom:calc(82px + env(safe-area-inset-bottom));}
+button,input{font:inherit}button{cursor:pointer;border:0}button:focus-visible,input:focus-visible{outline:3px solid #b5aaff;outline-offset:2px}
+.top{background:linear-gradient(135deg,#7565d8,#9b86ed);color:white;padding:calc(18px + env(safe-area-inset-top)) 18px 20px;border-radius:0 0 28px 28px;box-shadow:0 8px 22px #6554bc2b}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:52px;height:52px;border-radius:18px;background:#fff7d8;display:grid;place-items:center;font-size:29px;box-shadow:inset 0 -4px #efdca1}.brand h1{font-size:22px;margin:0}.brand p{font-size:12px;margin:4px 0 0;color:#eeeaff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.stat{background:#ffffff20;border:1px solid #ffffff30;border-radius:15px;padding:10px 8px;text-align:center}.stat b{display:block;font-size:20px}.stat span{font-size:11px;color:#f0edff}
+main{max-width:620px;margin:auto;padding:16px}.screen{display:none}.screen.active{display:block}.section-title{font-size:18px;margin:8px 0 12px}.pet-card{position:relative;overflow:hidden;border-radius:25px;background:linear-gradient(150deg,#fff,#f8eaff);padding:20px;margin-bottom:16px;border:1px solid #eee3ff}.pet-card:before,.pet-card:after{content:"";position:absolute;border-radius:50%;background:#f4e8ff;z-index:0}.pet-card:before{width:130px;height:130px;right:-35px;top:-35px}.pet-card:after{width:70px;height:70px;left:-24px;bottom:-28px}.pet-content{position:relative;z-index:1;text-align:center}.pet-name{font-weight:800;font-size:19px}.pet-emoji{font-size:88px;line-height:1.35;filter:drop-shadow(0 7px 3px #55407d17);margin:5px 0}.speech{display:inline-block;background:white;border:1px solid #eee4ff;border-radius:16px;padding:9px 13px;font-size:13px;color:#625b82;max-width:100%}.levelrow{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin:14px 0 6px}.bar{height:9px;background:#e9e3fa;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#ff91b8,#9276eb);border-radius:20px;transition:width .3s}.meters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;text-align:left}.meterlabel{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:5px}.meter .bar{height:7px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0 20px}.btn{padding:13px 14px;border-radius:15px;background:var(--purple);color:white;font-weight:750;box-shadow:0 4px 0 #5948b7;transition:transform .1s}.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #5948b7}.btn.pink{background:#f47ca5;box-shadow:0 4px 0 #cc5e87}.btn.light{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:0 3px 0 #e6def6}.btn:disabled{opacity:.45;cursor:not-allowed}.wide{width:100%}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile{border-radius:18px;padding:15px;color:white;min-height:120px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 4px #00000012}.tile .big{font-size:28px}.tile b{font-size:16px}.tile small{opacity:.9}.geo{background:linear-gradient(135deg,#41b889,#19835f)}.hist{background:linear-gradient(135deg,#ff9c82,#db5f67)}.civ{background:linear-gradient(135deg,#9d86ed,#6856c4)}.mix{background:linear-gradient(135deg,#63a9ef,#3477cb)}
+.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:14px}.eyebrow{font-size:11px;letter-spacing:.08em;color:var(--purple);font-weight:800}.question{font-size:19px;line-height:1.65;margin:12px 0 17px}.options{display:grid;gap:9px}.option{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:13px;text-align:left;color:var(--ink);line-height:1.5}.option.selected{border-color:var(--purple);background:#f0edff}.option.correct{border-color:#54b889;background:#e9faf2}.option.wrong{border-color:#f18ba5;background:#fff0f4}.letter{display:inline-grid;place-items:center;background:#f0edff;color:#6958c5;width:28px;height:28px;border-radius:9px;font-weight:800;margin-right:8px;font-size:12px}.feedback{padding:14px;border-radius:15px;margin-top:13px;line-height:1.7;font-size:14px}.good{background:#e8f9f0;color:#176642}.bad{background:#fff2e1;color:#835018}.pill{display:inline-block;background:#f0edff;color:#6c5ac7;padding:5px 9px;border-radius:99px;font-size:11px;font-weight:800}.progress{display:flex;gap:5px;margin:12px 0}.progress i{height:5px;border-radius:9px;flex:1;background:#e9e3fa}.progress i.on{background:#8b78e5}.tabs{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 8px calc(8px + env(safe-area-inset-bottom));z-index:10}.tab{background:none;color:#8b86a3;padding:6px 0;font-size:10px;display:grid;gap:3px;justify-items:center}.tab .ico{font-size:21px}.tab.active{color:#7565d8;font-weight:800}.empty{text-align:center;padding:25px 12px;color:var(--muted);line-height:1.8}.list-item{padding:12px 0;border-bottom:1px solid #f0edf7}.list-item:last-child{border-bottom:0}.list-item b{display:block;margin-bottom:6px}.muted{font-size:12px;color:var(--muted);line-height:1.6}.name-input{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--ink);background:white}.result-emoji{font-size:62px;text-align:center;margin:8px}
+@media(min-width:560px){main{padding:22px}.pet-emoji{font-size:100px}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="brand"><div class="logo">🐣</div><div><h1>まなびっこ</h1><p>高校入試 × かわいいペット育成</p></div></div>
+ <div class="stats">
+  <div class="stat"><b id="topXP">0</b><span>✨ 経験値 XP</span></div>
+  <div class="stat"><b id="topLevel">Lv.1</b><span>🌱 ペットレベル</span></div>
+  <div class="stat"><b id="topCorrect">0</b><span>🏆 正解数</span></div>
+ </div>
+</header>
+<main>
+<section id="home" class="screen active">
+ <div class="pet-card"><div class="pet-content">
+  <div class="pet-name" id="petTitle">もちまる</div><div class="pet-emoji" id="petEmoji">🥚</div>
+  <div class="pill" id="petStage">ふしぎなたまご</div>
+  <p><span class="speech" id="petSpeech">いっしょに勉強しよう！</span></p>
+  <div class="levelrow"><span id="levelText">Lv.1 見習い</span><span id="xpText">0 / 25 XP</span></div><div class="bar"><i id="xpBar" style="width:0%"></i></div>
+  <div class="meters">
+   <div class="meter"><div class="meterlabel"><span>💗 なかよし度</span><b id="bondText">35%</b></div><div class="bar"><i id="bondBar" style="width:35%;background:#f47ca5"></i></div></div>
+   <div class="meter"><div class="meterlabel"><span>🍪 おなか</span><b id="hungerText">55%</b></div><div class="bar"><i id="hungerBar" style="width:55%;background:#efbd4c"></i></div></div>
+  </div>
+ </div></div>
+ <div class="actions"><button class="btn pink" id="feedBtn">🍪 おやつをあげる <span id="snackCount">×3</span></button><button class="btn light" id="playBtn">💗 いっしょに遊ぶ</button></div>
+ <h2 class="section-title">🗺️ 冒険エリア</h2>
+ <div class="grid">
+  <button class="tile geo" data-start="地理"><span class="big">🌏</span><b>地理クエスト</b><small>大地と世界を探検</small></button>
+  <button class="tile hist" data-start="歴史"><span class="big">🏯</span><b>歴史クエスト</b><small>時空をこえる旅</small></button>
+  <button class="tile civ" data-start="公民"><span class="big">⚖️</span><b>公民クエスト</b><small>政治と経済の迷宮</small></button>
+  <button class="tile mix" data-start="総合"><span class="big">🎒</span><b>総合チャレンジ</b><small>全分野から出題</small></button>
+ </div>
+ <div class="panel" style="margin-top:15px"><div class="eyebrow">TODAY'S MISSION</div><h3 style="margin:7px 0">📚 3問チャレンジ</h3><div class="muted" id="missionText">問題を解いて、ペットと一緒に成長しよう！</div><div class="bar" style="margin-top:10px"><i id="missionBar" style="width:0%;background:#5eb98b"></i></div></div>
+</section>
+<section id="quiz" class="screen">
+ <div class="panel">
+  <div style="display:flex;justify-content:space-between;align-items:center"><span class="pill" id="quizTopic">地理クエスト</span><span class="muted" id="qCounter">1 / 5</span></div>
+  <div class="progress" id="qProgress"></div>
+  <h2 class="question" id="questionText">問題を読み込み中…</h2>
+  <div class="options" id="options"></div>
+  <div id="feedback"></div>
+  <button class="btn wide" id="answerBtn" style="margin-top:14px" disabled>答え合わせ ✨</button>
+  <button class="btn light wide" id="nextBtn" style="margin-top:10px;display:none">次の問題へ ➜</button>
+ </div>
+ <button class="btn light wide" id="quitBtn">冒険マップに戻る</button>
+</section>
+<section id="review" class="screen"><h2 class="section-title">📖 復習の図鑑</h2><div class="panel" id="reviewList"></div></section>
+<section id="record" class="screen">
+ <div class="panel"><div class="eyebrow">YOUR ADVENTURE</div><h2>🏆 冒険者の記録</h2><div class="grid"><div class="panel" style="margin:0;background:#fff5d8"><div class="muted">累計経験値</div><h2 id="recordXP">0 XP</h2></div><div class="panel" style="margin:0;background:#e5f8ed"><div class="muted">正答率</div><h2 id="accuracy">0%</h2></div><div class="panel" style="margin:0;background:#fce8f0"><div class="muted">最高コンボ</div><h2 id="bestCombo">0</h2></div><div class="panel" style="margin:0;background:#e8eaff"><div class="muted">回答した問題</div><h2 id="answered">0問</h2></div></div></div>
+ <div class="panel"><h3>🐾 ペットの名前</h3><input class="name-input" id="nameInput" maxlength="12" value="もちまる"><button class="btn wide" id="saveName" style="margin-top:10px">名前を変更する</button><p class="muted">学習記録とペットの成長は、この端末のブラウザに保存されます。</p></div>
+ <button class="btn light wide" id="resetBtn">記録をリセット</button>
+</section>
+</main>
+<nav class="tabs">
+ <button class="tab active" data-page="home"><span class="ico">🏠</span>ホーム</button>
+ <button class="tab" data-page="quiz"><span class="ico">⚔️</span>クエスト</button>
+ <button class="tab" data-page="review"><span class="ico">📖</span>復習</button>
+ <button class="tab" data-page="record"><span class="ico">🏆</span>記録</button>
+</nav>
+<script>
+const QUESTIONS=[
+{cat:"地理",unit:"日本の気候",q:"冬の日本海側で雪が多く降る主な理由は？",o:["北西の季節風が日本海で水蒸気を含むから","赤道から暖かい風が来るから","太平洋から乾いた風が吹くから","一年中南東の風が吹くから"],a:0,e:"北西の季節風が日本海で水蒸気を含み、山地にぶつかって雪を降らせます。"},
+{cat:"地理",unit:"日本の農業",q:"野菜などの出荷時期を早める栽培方法は？",o:["抑制栽培","促成栽培","輪作","二期作"],a:1,e:"促成栽培は温室や温暖な気候などを利用して出荷時期を早めます。抑制栽培は出荷時期を遅らせる方法です。"},
+{cat:"地理",unit:"世界の気候",q:"赤道付近に広がる熱帯雨林気候の特徴は？",o:["一年中気温が低い","一年中降水量が少ない","一年中高温で雨が多い","冬にだけ雪が降る"],a:2,e:"熱帯雨林気候は一年中高温で降水量が多く、熱帯雨林が発達します。"},
+{cat:"地理",unit:"工業",q:"日本の工業地帯・工業地域が太平洋側に多く分布してきた理由の一つは？",o:["大都市や港があり、原料の輸入や製品の輸送に便利だから","一年中雪が多いから","農地がまったくないから","人口が少ないから"],a:0,e:"港や大都市、交通網が発達し、原料の輸入や製品の輸送に便利な地域が多いためです。"},
+{cat:"地理",unit:"人口",q:"少子高齢化が進む社会で起こりやすい問題は？",o:["労働力人口の減少","年少人口の急増","高齢者人口の消滅","出生率の急上昇"],a:0,e:"少子高齢化が進むと、労働力人口の減少や社会保障費の増加などが課題になります。"},
+{cat:"歴史",unit:"飛鳥時代",q:"645年に蘇我入鹿が倒された政変は？",o:["壬申の乱","乙巳の変","承久の乱","応仁の乱"],a:1,e:"政変そのものは乙巳の変。その後に進められた政治改革が大化の改新です。"},
+{cat:"歴史",unit:"奈良時代",q:"701年に制定された法典は？",o:["御成敗式目","武家諸法度","大宝律令","五箇条の御誓文"],a:2,e:"大宝律令は701年に制定された律令です。律は刑罰、令は政治や行政などに関する法です。"},
+{cat:"歴史",unit:"鎌倉時代",q:"鎌倉幕府で将軍と御家人の関係を表す言葉は？",o:["公地公民","御恩と奉公","楽市楽座","参勤交代"],a:1,e:"将軍が御家人に御恩を与え、御家人が奉公で応える主従関係です。"},
+{cat:"歴史",unit:"江戸時代",q:"江戸幕府が大名を統制するために定めた制度は？",o:["班田収授法","墾田永年私財法","参勤交代","刀狩"],a:2,e:"参勤交代では大名が江戸と領地を定期的に往復し、幕府による統制が強まりました。"},
+{cat:"歴史",unit:"明治時代",q:"明治政府が1873年に始めた、土地の所有者に地価をもとに税を納めさせる改革は？",o:["地租改正","廃藩置県","学制","徴兵令"],a:0,e:"地租改正では、土地の所有者が地価の3％を原則として現金で納める制度が始まりました。"},
+{cat:"公民",unit:"日本国憲法",q:"日本国憲法の三大原則に含まれないものは？",o:["国民主権","基本的人権の尊重","平和主義","三権分立"],a:3,e:"三大原則は国民主権・基本的人権の尊重・平和主義です。三権分立は権力の集中を防ぐ仕組みです。"},
+{cat:"公民",unit:"国会",q:"国の唯一の立法機関は？",o:["内閣","裁判所","国会","警察"],a:2,e:"国会は法律を制定する国の唯一の立法機関です。"},
+{cat:"公民",unit:"選挙制度",q:"日本の衆議院議員の任期は原則何年？",o:["2年","4年","6年","8年"],a:1,e:"衆議院議員の任期は4年ですが、解散があればその前に終了します。"},
+{cat:"公民",unit:"三権分立",q:"法律や命令などが憲法に違反していないかを判断する権限を何という？",o:["行政権","立法権","違憲審査権","条約締結権"],a:2,e:"違憲審査権は、法律などが憲法に適合するかを審査する権限です。最高裁判所は終審裁判所としてこの権限を持ちます。"},
+{cat:"公民",unit:"地方自治",q:"地方公共団体の長や議会の議員を住民が直接選ぶ仕組みは？",o:["間接民主制だけの仕組み","直接請求制度","住民投票だけの仕組み","直接選挙"],a:3,e:"知事や市町村長、地方議会の議員は住民の直接選挙によって選ばれます。"}
+];
+const defaults={xp:0,correct:0,attempts:0,streak:0,best:0,snacks:3,bond:35,hunger:55,name:"もちまる",missed:[],daily:0};
+let state;try{state={...defaults,...JSON.parse(localStorage.getItem("manabikko-save")||"{}")}}catch{state={...defaults}}
+let topic="地理",pool=[],pos=0,selected=-1,answered=false,session=0;
+const $=id=>document.getElementById(id);
+function save(){try{localStorage.setItem("manabikko-save",JSON.stringify(state))}catch{}}
+function level(){return state.xp>=250?5:state.xp>=150?4:state.xp>=75?3:state.xp>=25?2:1}
+function stage(){return [{emoji:"🥚",name:"ふしぎなたまご"},{emoji:"🐣",name:"ぴよぴよ期"},{emoji:"🐥",name:"ひよこ期"},{emoji:"🐱",name:"もふもふ期"},{emoji:"🦊",name:"伝説の賢者"}][level()-1]}
+function render(){
+ const s=stage(),lv=level(),threshold=[0,25,75,150,250][lv-1],next=[25,75,150,250,350][lv-1];
+ $("topXP").textContent=state.xp;$("topLevel").textContent="Lv."+lv;$("topCorrect").textContent=state.correct;
+ $("petTitle").textContent=state.name;$("petEmoji").textContent=s.emoji;$("petStage").textContent=s.name;
+ $("levelText").textContent="Lv."+lv+" "+(lv===1?"見習い":lv===5?"社会マスター":"冒険者");
+ $("xpText").textContent=(state.xp-threshold)+" / "+(next-threshold)+" XP";
+ $("xpBar").style.width=Math.min(100,(state.xp-threshold)/(next-threshold)*100)+"%";
+ $("bondText").textContent=state.bond+"%";$("bondBar").style.width=state.bond+"%";
+ $("hungerText").textContent=state.hunger+"%";$("hungerBar").style.width=state.hunger+"%";
+ $("snackCount").textContent="×"+state.snacks;$("missionText").textContent="今日の学習 "+Math.min(3,state.daily)+" / 3問";
+ $("missionBar").style.width=Math.min(100,state.daily/3*100)+"%";
+ $("recordXP").textContent=state.xp+" XP";$("accuracy").textContent=(state.attempts?Math.round(state.correct/state.attempts*100):0)+"%";
+ $("bestCombo").textContent=state.best;$("answered").textContent=state.attempts+"問";$("nameInput").value=state.name;
+ renderReview();
+}
+function showPage(id){document.querySelectorAll(".screen").forEach(x=>x.classList.toggle("active",x.id===id));document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.page===id));if(id==="quiz"&&!pool.length)start("総合");if(id==="review")renderReview();render()}
+function start(t){topic=t;pool=QUESTIONS.filter(q=>t==="総合"||q.cat===t).sort(()=>Math.random()-.5);pos=0;session=0;showPage("quiz");drawQ()}
+function drawQ(){
+ if(pos>=pool.length){$("questionText").textContent="クエストクリア！";$("options").innerHTML="";$("feedback").innerHTML=`<div class="feedback good">🎉 ${session}問回答！今回もよく頑張ったね。</div>`;$("answerBtn").style.display="none";$("nextBtn").style.display="block";$("nextBtn").textContent="ホームに戻る";$("nextBtn").onclick=()=>showPage("home");$("qCounter").textContent="CLEAR";$("qProgress").innerHTML="";return}
+ answered=false;selected=-1;const q=pool[pos];$("quizTopic").textContent=q.cat+"｜"+q.unit;$("qCounter").textContent=(pos+1)+" / "+pool.length;
+ $("qProgress").innerHTML=pool.map((_,i)=>`<i class="${i<=pos?"on":""}"></i>`).join("");$("questionText").textContent=q.q;
+ $("options").innerHTML=q.o.map((o,i)=>`<button class="option" data-i="${i}"><span class="letter">${"ABCD"[i]}</span>${o}</button>`).join("");
+ $("options").querySelectorAll("button").forEach(b=>b.onclick=()=>{if(answered)return;selected=+b.dataset.i;$("options").querySelectorAll("button").forEach(x=>x.classList.toggle("selected",x===b));$("answerBtn").disabled=false});
+ $("feedback").innerHTML="";$("answerBtn").style.display="block";$("answerBtn").disabled=true;$("nextBtn").style.display="none";$("nextBtn").textContent="次の問題へ ➜";$("nextBtn").onclick=next;
+}
+function check(){
+ if(selected<0||answered)return;answered=true;session++;state.attempts++;state.daily++;const q=pool[pos],ok=selected===q.a;
+ if(ok){state.correct++;state.streak++;state.best=Math.max(state.best,state.streak);let bonus=state.streak>=3?5:0;state.xp+=10+bonus;state.bond=Math.min(100,state.bond+6);state.hunger=Math.max(0,state.hunger-3);state.snacks=Math.min(9,state.snacks+1);$("feedback").innerHTML=`<div class="feedback good"><b>🎉 正解！ +${10+bonus} XP</b><br>${state.streak>=3?"🔥 コンボボーナス！":"すばらしい！"}<br>${q.e}<br>🍪 おやつを1個ゲット！</div>`;$("petSpeech").textContent="やったね！いっしょに成長中！"}
+ else{state.streak=0;state.missed.unshift({q:q.q,a:q.o[q.a],e:q.e,cat:q.cat});$("feedback").innerHTML=`<div class="feedback bad"><b>📚 おしい！正解は「${q.o[q.a]}」</b><br>${q.e}</div>`;$("petSpeech").textContent="まちがいは成長のチャンス！"}
+ $("options").querySelectorAll("button").forEach((b,i)=>{b.disabled=true;if(i===q.a)b.classList.add("correct");if(i===selected&&!ok)b.classList.add("wrong")});
+ $("answerBtn").style.display="none";$("nextBtn").style.display="block";save();render();
+}
+function next(){pos++;drawQ()}
+function renderReview(){
+ const list=state.missed;$("reviewList").innerHTML=list.length?`<p class="muted">間違えた問題：${list.length}問。正解と解説を見直そう。</p>`: `<div class="empty">📚 まだ復習問題はないよ！<br>クエストに挑戦すると、ここに記録されるよ。</div>`;
+ list.forEach((m,i)=>{const d=document.createElement("div");d.className="list-item";d.innerHTML=`<span class="pill">${m.cat}</span><b>${esc(m.q)}</b><div style="color:#23845b;font-size:13px">正解：${esc(m.a)}</div><div class="muted">${esc(m.e)}</div><button class="btn light" style="margin-top:9px;padding:8px 12px" data-remove="${i}">復習できた ✓</button>`;$("reviewList").appendChild(d)});
+ $("reviewList").querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{state.missed.splice(+b.dataset.remove,1);save();renderReview()});
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+document.querySelectorAll("[data-start]").forEach(b=>b.onclick=()=>start(b.dataset.start));
+document.querySelectorAll("[data-page]").forEach(b=>b.onclick=()=>showPage(b.dataset.page));
+$("answerBtn").onclick=check;$("nextBtn").onclick=next;$("quitBtn").onclick=()=>showPage("home");
+$("feedBtn").onclick=()=>{if(state.snacks<=0){$("petSpeech").textContent="おやつがないよ！勉強クエストで手に入れよう。";return}if(state.hunger>=100){$("petSpeech").textContent="おなかいっぱい！少し休もう。";return}state.snacks--;state.hunger=Math.min(100,state.hunger+25);state.bond=Math.min(100,state.bond+8);$("petSpeech").textContent="おいしい！ありがとう！";save();render()};
+$("playBtn").onclick=()=>{state.bond=Math.min(100,state.bond+12);state.hunger=Math.max(0,state.hunger-8);$("petSpeech").textContent="いっしょに遊べてうれしいな！";save();render()};
+$("saveName").onclick=()=>{state.name=$("nameInput").value.trim().slice(0,12)||"もちまる";save();render();$("petSpeech").textContent="よろしくね、"+state.name+"！"};
+$("resetBtn").onclick=()=>{if(confirm("学習記録とペットの成長をリセットしますか？")){state={...defaults};save();render();showPage("home")}};
+render();
+if('serviceWorker' in navigator && location.protocol!=='file:'){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+</script>
+</body>
+</html>
